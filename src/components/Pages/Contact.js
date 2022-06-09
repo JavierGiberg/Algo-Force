@@ -2,5 +2,5 @@ import React from "react";
 import "../../App.css";
 
 export default function Contact() {
-  return <h1 className="contact">LIKE & SUBSCRIBE</h1>;
+  return <h1 className="contact">in Process</h1>;
 }

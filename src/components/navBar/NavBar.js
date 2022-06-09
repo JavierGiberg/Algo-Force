@@ -4,77 +4,50 @@ import { Link } from "react-router-dom";
 import "./Nav.css";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  const [active, setActive] = useState("nav-menu");
+  const [icon, setIcon] = useState("nav-toggler");
+  const navToggle = () => {
+    if (active === "nav-menu") {
+      setActive("nav-menu nav-active");
+    } else setActive("nav-menu");
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
+    if (icon === "nav-toggler") {
+      setIcon("nav-toggler toggle");
+    } else setIcon("nav-toggler");
   };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener("resize", showButton);
-
   return (
-    <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            Algo Force
-            <i className="fab fa-typo3" />
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/services"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                to="/products"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Products
-              </Link>
-            </li>
+    <nav className="nav">
+      <img src="./images/Artwork.png" className="nav-logo" />
 
-            <li>
-              <Link
-                to="/contact"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-          {button && <Button buttonStyle="btn--outline">CONTACT US</Button>}
-        </div>
-      </nav>
-    </>
+      <ul className={active}>
+        <li className="nav-item">
+          <a href="/" className="nav-link">
+            Home
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="about" className="nav-link">
+            About
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="products" className="nav-link">
+            Products
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="/contact" className="nav-link">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+      <div onClick={navToggle} className={icon}>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
+      </div>
+    </nav>
   );
 }
-
 export default Navbar;
