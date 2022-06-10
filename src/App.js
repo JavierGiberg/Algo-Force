@@ -6,9 +6,10 @@ import "./App.css";
 
 import Home from "./components/Pages/Home";
 import Services from "./components/Pages/About";
-import Products from "./components/Pages/Products";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./components/Pages/Contact";
+import About from "./components/Pages/About";
 function App() {
   return (
     <>
@@ -16,8 +17,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<Services />} />
-          {/* <Route path="/products" element={<Products />} /> */}
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>

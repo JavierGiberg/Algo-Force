@@ -42,3 +42,7 @@
   
   font-size: 100px;
 }
+.title{
+  background: linear-gradient(90deg, rgb(195, 185, 185) 0%, rgb(26, 23, 23) 100%);
+
+}

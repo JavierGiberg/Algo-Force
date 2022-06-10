@@ -1,11 +1,18 @@
 import React from "react";
 import "./Cards.css";
-import CardItem from "./CardItem";
-
+import About from "../Pages/About";
 function Cards() {
   return (
     <div className="cards">
-      <h1>Algo Force Algo Force Algo Force </h1>
+      <About />
+    </div>
+  );
+}
+
+export default Cards;
+
+{
+  /* <h1>Algo Force Algo Force Algo Force </h1>
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
@@ -14,8 +21,10 @@ function Cards() {
               text="Algo Force Algo Force Algo Force Algo Force"
               label="Adventure"
               path="/services"
-            />
-            {/* <CardItem
+            /> */
+}
+{
+  /* <CardItem
               src="images/img-2.jpg"
               text="Travel through the Islands of Bali in a Private Cruise"
               label="Luxury"
@@ -40,12 +49,10 @@ function Cards() {
               text="Ride through the Sahara Desert on a guided camel tour"
               label="Adrenaline"
               path="/sign-up"
-            /> */}
-          </ul>
-        </div>
-      </div>
-    </div>
-  );
+            /> */
 }
-
-export default Cards;
+{
+  /* </ul>
+        </div>
+      </div> */
+}

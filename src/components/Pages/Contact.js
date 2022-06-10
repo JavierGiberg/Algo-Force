@@ -1,6 +1,11 @@
 import React from "react";
 import "../../App.css";
+import Footer from "../Footer/Footer";
 
 export default function Contact() {
-  return <h1 className="contact">in Process</h1>;
+  return (
+    <div className="footer-container">
+      <Footer />
+    </div>
+  );
 }

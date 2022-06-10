@@ -17,9 +17,19 @@ function Footer() {
               className="footer-input"
               name="email"
               type="email"
-              placeholder="Your Email"
+              placeholder="gibergjavier@gmail.com"
             />
-            <Button buttonStyle="btn--outline">Subscribe</Button>
+
+            <Button
+              buttonStyle="btn--outline"
+              onClick={() => {
+                alert(
+                  "Your details have been successfully received, we will contact you as soon as possible. Thank you very much Algo Force team."
+                );
+              }}
+            >
+              Subscribe
+            </Button>
           </form>
         </div>
       </section>

@@ -13,7 +13,6 @@ function HeroSection() {
         muted
       />
 
-      <h1>Algo Force</h1>
       <img className="logo" src="./images/Artwork.png" />
 
       <p>What are you waiting for?</p>
@@ -23,7 +22,7 @@ function HeroSection() {
           buttonStyle="btn--outline"
           buttonSize="btn--large"
         >
-          GET STARTED
+          JOIN US
         </Button>
       </div>
     </div>
