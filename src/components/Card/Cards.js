@@ -3,7 +3,7 @@ import "./Cards.css";
 import About from "../Pages/About";
 function Cards() {
   return (
-    <div className="cards">
+    <div>
       <About />
     </div>
   );

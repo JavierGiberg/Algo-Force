@@ -1,0 +1,12 @@
+.home_coint{
+    display: flex;
+    flex-direction: column;
+   
+}
+.home_item1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    overflow:scroll;
+}

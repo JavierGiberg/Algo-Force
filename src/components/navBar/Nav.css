@@ -63,7 +63,7 @@ a {
     z-index: 1;
     top: 34.5px;
     right: -5vh;
-    height: 25vh;
+    height: 15vh;
     width:30vw;
     background: linear-gradient(90deg, rgb(195, 185, 185) 0%, rgb(26, 23, 23) 100%);
     flex-direction: column-reverse ;

@@ -7,10 +7,11 @@ function Footer() {
   return (
     <div className="footer-container">
       <section className="footer-subscription">
-        <p className="footer-subscription-heading">Join the Algo Force</p>
-        <p className="footer-subscription-text">
-          You can unsubscribe at any time.
+        <p className="footer-subscription-heading">
+          Want to join us and conquer the crypto market? Leave your information
+          and we will be in touch as soon as possible.
         </p>
+
         <div className="input-areas">
           <form>
             <input

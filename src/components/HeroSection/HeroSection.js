@@ -1,6 +1,6 @@
 import React from "react";
 import "../../App.css";
-import { Button } from "../Button/Button";
+import Cards from "../Card/Cards";
 import "./HeroSection.css";
 
 function HeroSection() {
@@ -12,18 +12,36 @@ function HeroSection() {
         loop
         muted
       />
-
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <img className="logo" src="./images/Artwork.png" />
-
-      <p>What are you waiting for?</p>
+      <h2 className="maintitle">
+        The special forces of the cryptographic market
+      </h2>
       <div className="hero-btns">
-        <Button
-          className="btns"
-          buttonStyle="btn--outline"
-          buttonSize="btn--large"
-        >
-          JOIN US
-        </Button>
+        <Cards />
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );

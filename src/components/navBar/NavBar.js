@@ -25,11 +25,11 @@ function Navbar() {
             Home
           </a>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <a href="about" className="nav-link">
             About
           </a>
-        </li>
+        </li> */}
 
         <li className="nav-item">
           <a href="/contact" className="nav-link">

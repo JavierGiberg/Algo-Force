@@ -10,6 +10,7 @@ import Services from "./components/Pages/About";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./components/Pages/Contact";
 import About from "./components/Pages/About";
+import Cards from "./components/Card/Cards";
 function App() {
   return (
     <>
@@ -17,7 +18,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about" element={<Cards />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Router>

@@ -4,9 +4,8 @@ import "../../App.css";
 export default function About() {
   return (
     <div>
-      <h1 className="title">About us</h1>
       <div className="about">
-        <h1></h1>
+        <h1>About us</h1>
         <p>
           <h3>The special forces of the cryptographic market.</h3>
           <b> Algo Force company</b> was founded by programmers and crypto
@@ -19,8 +18,9 @@ export default function About() {
           financial world and its value will only keep rising. <br />
         </p>
       </div>
-      <h1 className="title">How do we do it?</h1>
+
       <div className="about">
+        <h1>How do we do it?</h1>
         <p>
           <b>We in Algo force</b> developed several trade <b>algorithms</b> who
           analyze the market and trade by various strategies that can beat any
@@ -40,14 +40,16 @@ export default function About() {
           <br /> Algo Force is dedicated to be flexible and exclusive in order
           to give any of our limited number of clients the best service with the
           highest quality.
-          <br /> We understand that one of the most important values for the
-          investors is the personal treatment and our full attention. That why
-          we put service as our top priority.
-          <br /> Any of our clients well have it own personal contact to keep in
-          touch as much needed including meetings face to face. Want to join us
-          and conquer the crypto market? Leave your information and we will be
-          in touch as soon as possible.
+          <br />
         </p>
+      </div>
+      <div className="about">
+        <h1> We understand</h1>
+        that one of the most important values for the investors is the personal
+        treatment and our full attention. That why we put service as our top
+        priority.
+        <br /> Any of our clients well have it own personal contact to keep in
+        touch as much needed including meetings face to face.
       </div>
     </div>
   );
