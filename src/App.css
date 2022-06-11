@@ -20,14 +20,18 @@
 
 .about {
   margin-top: 50px;
-  border-bottom:20px solid #fff;
-  border-top:20px solid #fff;
+  border-bottom:20px solid rgba(255, 217, 0, 0.331)  ;
+  border-top:20px solid rgba(255, 217, 0, 0.331) ;
   border-radius: 0px;
-  color: rgb(255, 255, 255);
+ 
   width: 350px;
   text-align: center;
-  filter: opacity(0.5) drop-shadow(0 0 0 rgb(255,215,0));
  
+  background-color: rgba(0, 0, 0, 0.5)
+}
+.about_text{
+  color: rgb(255, 255, 255);
+  filter: opacity(0.5) drop-shadow(0 0 0 rgb(255,215,0));
 }
 
 .products {
